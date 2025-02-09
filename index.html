@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock paper scissors</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    <h1 class="title">Rock paper scissors</h1>
+
+    <button class="rock"><img src="images/rock-emoji.png" alt="rock" /></button>
+
+    <button class="paper">
+      <img src="images/paper-emoji.png" alt="paper" />
+    </button>
+
+    <button class="scissors">
+      <img src="images/scissors-emoji.png" alt="scissors" />
+    </button>
+
+    <p class="result"></p>
+    <p class="game-moves"></p>
+    <p class="score-history"></p>
+    <button class="reset-score">Reset</button>
+    <button class="auto-play">Auto Play</button>
+    <div class="confirm-container hidden">
+      <div class="confirm-popup ">
+        <p>Are you sure you want to reset the game ?</p>
+        <button class="yes">Yes</button>
+        <button class="no">No</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

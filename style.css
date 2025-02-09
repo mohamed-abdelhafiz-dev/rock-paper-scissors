@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  min-height: 100%;
+}
+
+body {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(25, 25, 25);
+  color: white;
+  padding: 70px 0 20px 8px;
+  text-align: center;
+}
+
+button img {
+  width: 44%;
+}
+
+button:not(.reset-score, .auto-play, .confirm-container .confirm-popup button) {
+  background-color: transparent;
+  border: 3px solid white;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+h1.title {
+  font-size: 3rem;
+  margin-bottom: 50px;
+  font-style: italic;
+}
+
+.result {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+.game-moves {
+  font-size: 1.6rem;
+  margin: 26px 0;
+}
+
+.game-moves img {
+  width: 50px;
+}
+
+.score-history {
+  font-size: 1.6rem;
+  margin-top: 60px;
+}
+
+.reset-score,
+.auto-play {
+  padding: 8px 15px;
+  font-size: 1.5rem;
+  margin: 17px 7px;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  cursor: pointer;
+  border-radius: 7px;
+  box-shadow: 0 0 5px white;
+}
+
+.confirm-container {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.confirm-container .confirm-popup {
+  background-color: transparent;
+  color: white;
+  padding: 20px;
+  padding: 40px;
+}
+
+.confirm-container .confirm-popup p {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+
+.confirm-container .confirm-popup button {
+  border: none;
+  padding: 5px 20px;
+  border-radius: 5px;
+  margin-right: 15px;
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: inherit;
+}
+
+.confirm-container .confirm-popup button.yes {
+  background-color: green;
+}
+
+.confirm-container .confirm-popup button.yes:hover {
+  background-color: rgb(0, 128, 0, 0.8);
+}
+
+.confirm-container .confirm-popup button.no {
+  background-color: darkred;
+}
+
+.confirm-container .confirm-popup button.no:hover {
+  background-color: rgb(139, 0, 0, 0.8);
+}
+
+.hidden {
+  display: none;
+}
